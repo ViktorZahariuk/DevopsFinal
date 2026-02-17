@@ -20,5 +20,6 @@ public class Main {
         for (Tarea t : gestor.getTareasCompletadas()) {
             System.out.println(t);
         }
+        System.out.println("\nTareas pendientes después de marcar una como completada:");
     }
 }
