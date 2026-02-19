@@ -16,7 +16,8 @@ FROM eclipse-temurin:17-jre-jammy
 WORKDIR /app
 
 
-COPY --from=builder /build/target/demo-1.0-SNAPSHOT-shaded.jar app.jar
+COPY --from=builder /build/target/*.jar app.jar
+
 
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
